@@ -12,7 +12,7 @@
 
     TabbedPanelItem:
 
-        text: 'Red Army Choir'
+        text: 'Alexandrov Ensamble'
 
         text_size: self.size
         background_color: (255, 0, 0,0.8)
@@ -52,6 +52,13 @@
                 font_size: 20
                 background_color: (255, 0, 0, 0.5)
 
+            Button:
+                text:'My Army'
+                color: (255, 255, 0, 1)
+                on_press: root.my_army()
+                font_size: 20
+                background_color: (255, 0, 0, 0.5)
+
 
 
 
@@ -68,22 +75,33 @@
             Button:
 
                 text: 'O Sole Mio'
-                color: (255, 0, 0, 0.9)
+                color: (0, 255, 0, 0.9)
                 on_press: root.o_sole_mio()
                 background_color: (0, 0, 255, 0.6)
-                
+                font_size: 20
+
 
             Button:
-                text: 'Nessun Dorma'
-                color: (255, 0, 0, 0.9)
-                on_press: root.nessun_dorma()
+                text: 'Mattinata'
+                color: (0, 255, 0, 0.9)
+                on_press: root.mattinata()
                 background_color: (0, 0, 255, 0.6)
+                font_size: 20
 
             Button:
                 text: 'Core Ngrato'
-                color: (255, 0, 0, 0.9)
+                color: (0, 255, 0, 0.9)
                 on_press: root.core_ngrato()
-                background_color: (0, 0, 255, 0.6)
+                background_color: (0, 0, 255, 0.9)
+                font_size: 20
+
+            Button:
+                text: 'Nessun Dorma'
+                color: (0, 255, 0, 0.9)
+                on_press: root.nessun_dorma()
+                background_color: (0, 0, 255, 0.9)
+                font_size: 20
+
 
 
     TabbedPanelItem:
@@ -93,8 +111,11 @@
             orientation: 'vertical'
             padding: 20
             spacing: 10
+
             Button:
                 text: 'Stars and Stripes Forever'
                 color: (0, 0, 255, 0.9)
-                background_color: (255, 0, 0, 0.5)
+                font_size: 20
+
                 on_press: root.stars_and_stripes()
+                background_color: (255, 0, 0, 0.5)

@@ -1,0 +1,100 @@
+<Test>:
+    do_default_tab: False
+    Widget:
+        background_color: (1, 0, 0, 1)
+        canvas.before:
+            Rectangle:
+                size: self.size
+                pos: self.pos
+
+
+
+
+    TabbedPanelItem:
+
+        text: 'Red Army Choir'
+
+        text_size: self.size
+        background_color: (255, 0, 0,0.8)
+
+
+        BoxLayout:
+            orientation: 'vertical'
+            padding: 20
+            spacing: 10
+            background_color: (255, 0, 0, 0.8)
+
+            Button:
+
+                text: 'Kalinka'
+                color: (255, 255, 0, 1)
+                text_size: self.size
+                on_press: root.kalinka()
+                background_color: (255, 0, 0, 0.5)
+
+
+                halign: 'center'
+                valign: 'middle'
+
+                font_size: 20
+
+            Button:
+                text: 'O My Fields'
+                color: (255, 255, 0, 1)
+                on_press: root.fields()
+                font_size: 20
+                background_color: (255, 0, 0, 0.5)
+
+            Button:
+                text:'Smuglyanka'
+                color: (255, 255, 0, 1)
+                on_press: root.smuglyanka()
+                font_size: 20
+                background_color: (255, 0, 0, 0.5)
+
+
+
+
+    TabbedPanelItem:
+        text: 'Opera'
+        background_color: (0, 0, 255, 0.8)
+        BoxLayout:
+            orientation: 'vertical'
+            padding: 20
+            spacing: 10
+
+
+
+            Button:
+
+                text: 'O Sole Mio'
+                color: (255, 0, 0, 0.9)
+                on_press: root.o_sole_mio()
+                background_color: (0, 0, 255, 0.6)
+                
+
+            Button:
+                text: 'Nessun Dorma'
+                color: (255, 0, 0, 0.9)
+                on_press: root.nessun_dorma()
+                background_color: (0, 0, 255, 0.6)
+
+            Button:
+                text: 'Core Ngrato'
+                color: (255, 0, 0, 0.9)
+                on_press: root.core_ngrato()
+                background_color: (0, 0, 255, 0.6)
+
+
+    TabbedPanelItem:
+        text: 'Marches'
+        background_color: (0, 255, 0, 0.8)
+        BoxLayout:
+            orientation: 'vertical'
+            padding: 20
+            spacing: 10
+            Button:
+                text: 'Stars and Stripes Forever'
+                color: (0, 0, 255, 0.9)
+                background_color: (255, 0, 0, 0.5)
+                on_press: root.stars_and_stripes()

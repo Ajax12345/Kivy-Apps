@@ -15,7 +15,11 @@ class Test(TabbedPanel):
     o_sole_mio_song = SoundLoader.load('/Users/davidpetullo/Downloads/o-sole-mio-__.wav')
     my_fields = SoundLoader.load('/Users/davidpetullo/Downloads/Red-Army-Choir-Polyushka-Polye.wav')
     my_smuglyanka = SoundLoader.load('/Users/davidpetullo/Downloads/Red-Russian-Army-Choir-Smuglyanka-Moldavanka.wav')
-    my_nessun_dorma = SoundLoader.load('/Users/davidpetullo/Downloads/Pavarotti\ -\ Nessun\ Dorma\ 1994\ \(High\ Quality\ With\ Lyrics\).wav')
+    my_mattinata = SoundLoader.load('/Users/davidpetullo/Desktop/Mattinata.wav')
+    my_starsandstripesforever = SoundLoader.load('/Users/davidpetullo/Desktop/Starsandstripesforever.wav')
+    my_core_ngrato = SoundLoader.load('/Users/davidpetullo/Desktop/corengrato.wav')
+    my_nessun_dorma = SoundLoader.load('/Users/davidpetullo/Desktop/nessundorma.wav')
+    my_myarmy = SoundLoader.load('/Users/davidpetullo/Desktop/myarmy.wav')
 
 
     def kalinka(self):
@@ -46,12 +50,12 @@ class Test(TabbedPanel):
         else:
             self.my_smuglyanka.stop()
 
-    def nessun_dorma(self):
-        if self.my_nessun_dorma.state == 'stop':
-            self.my_nessun_dorma.play()
+    def mattinata(self):
+        if self.my_mattinata.state == 'stop':
+            self.my_mattinata.play()
 
         else:
-            self.my_nessun_dorma.stop()
+            self.my_mattinata.stop()
 
     def core_ngrato(self):
         if self.my_core_ngrato.state == 'stop':
@@ -65,6 +69,20 @@ class Test(TabbedPanel):
 
         else:
             self.my_starsandstripesforever.stop()
+
+    def nessun_dorma(self):
+        if self.my_nessun_dorma.state == 'stop':
+            self.my_nessun_dorma.play()
+
+        else:
+            self.my_nessun_dorma.stop()
+
+    def my_army(self):
+        if self.my_myarmy.state == 'stop':
+            self.my_myarmy.play()
+
+        else:
+            self.my_myarmy.stop()
 
 
 class TabbedPanelApp(App):

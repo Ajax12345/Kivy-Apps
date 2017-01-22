@@ -1,0 +1,23 @@
+<Personal_Assistant>:
+    canvas:
+        Rectangle:
+            pos: self.size
+            size: self.size
+    BoxLayout:
+        orientation: 'vertical'
+        padding: 20
+        spacing: 40
+        Button:
+
+            text: root.greeting()
+            on_press: root.on_click()
+            color: (255, 255, 255, 255)
+            text_size: self.size
+            font_size: 40
+            halign: 'center'
+            valign: 'middle'
+            background_color: (0, 0, 255, 0.6)
+
+        Label:
+            background_color: (0, 255, 0, 0.6)
+            text: "hello"
